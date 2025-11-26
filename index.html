@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍪</text></svg>" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Miss Eklerchik | Мамский блог без цензуры</title>
+    <meta name="title" content="Miss Eklerchik | Мамский блог без цензуры">
+    <meta name="description" content="Честный блог о материнстве, валерьянке и любви. Советы, рецепты и поддержка для уставших мам." />
+    
+    <!-- Open Graph / Facebook / Telegram / VK -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://miss-eklerchik.ru/" />
+    <meta property="og:title" content="Miss Eklerchik | Мамский блог без цензуры" />
+    <meta property="og:description" content="Честный блог о материнстве, валерьянке и любви. Советы, рецепты и поддержка для уставших мам." />
+    <meta property="og:image" content="https://picsum.photos/1200/630?random=1" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://miss-eklerchik.ru/" />
+    <meta property="twitter:title" content="Miss Eklerchik | Мамский блог без цензуры" />
+    <meta property="twitter:description" content="Честный блог о материнстве, валерьянке и любви. Советы, рецепты и поддержка для уставших мам." />
+    <meta property="twitter:image" content="https://picsum.photos/1200/630?random=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=42119784', 'ym');
+
+        ym(42119784, 'init', {ssr:true, webvisor:true, trackHash:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Tailwind CSS CDN (kept for simplicity in this setup without local postcss config) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'clay-bg': '#F0FDFA',
+              'clay-purple': '#14B8A6',
+              'clay-purple-dark': '#0D9488',
+              'clay-pink': '#FB7185',
+              'clay-yellow': '#FDE047',
+              'clay-teal': '#99F6E4',
+              'clay-text': '#134E4A',
+              'clay-card': '#FFFFFF',
+            },
+            fontFamily: {
+              serif: ['Montserrat', 'sans-serif'],
+              sans: ['Roboto', 'sans-serif'],
+            },
+            boxShadow: {
+              'clay': '10px 10px 20px #cbd5e1, -10px -10px 20px #ffffff',
+              'clay-hover': '15px 15px 30px #cbd5e1, -15px -15px 30px #ffffff',
+              'clay-inset': 'inset 5px 5px 10px #d1d5db, inset -5px -5px 10px #ffffff',
+              'plastic': '0 10px 15px -3px rgba(20, 184, 166, 0.2), 0 4px 6px -2px rgba(20, 184, 166, 0.1), inset 0 -4px 4px 0 rgba(255, 255, 255, 0.5)',
+            },
+            borderRadius: {
+              '4xl': '2rem',
+              '5xl': '3rem',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F0FDFA;
+        color: #134E4A;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F0FDFA;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #14B8A6;
+        border-radius: 20px;
+        border: 3px solid #F0FDFA;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.84.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <!-- Yandex.Metrika counter noscript moved to body for HTML validity -->
+    <noscript><div><img src="https://mc.yandex.ru/watch/42119784" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
